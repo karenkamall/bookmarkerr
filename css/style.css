@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+#main{
+    background-color: RGB(247, 236, 222);
+}
+
+h1{
+   font-family:pacifico;
+   font-size: 50px;
+   line-height: 60px;
+  
+}
+
+
+
+.sumbit-btn{
+ background-color: #c44b29;
+ color: white;
+}
+h2.style{
+    background-image: linear-gradient(to right,#3ca55c,#b5ac49);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+

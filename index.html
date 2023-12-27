@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Bookmark</title>
+</head>
+<body id="main">
+  
+ <div class="container py-5">
+     <div class="">
+      <h1 class="py-4 text-center position-relative">Bookmarker</h1>
+      
+     </div>
+    <div class="bookmark-body">
+       <p>.......................................................................................................................................................................................................................................................................................................................................................................................</p>
+       <h2 class="style text-center"><i class="fa-solid fa-bookmark"></i> Bookmark Your Favourite Site <i class="fa-solid fa-bookmark"></i></h2>
+       <label for="siteNameInput" class="fw-semibold py-2">
+         <i class="fa-solid fa-book-bookmark"></i> Site Name:
+       </label>
+       <input id="siteNameInput" placeholder="Bookmark Name" class="form-control py-2 mb-2">
+       <label for="siteUrlInput" class="fw-semibold py-2">
+         <i class="fa-solid fa-link"></i> Site URL:
+       </label>
+       <input oninput="isValidUrl()" id="siteUrlInput" placeholder="Website URL" class="form-control py-2 mb-3">
+       <div id="alertMess" class="alert alert-danger d-none"> Site URL Must Be a Valid one </div>
+       <div class="d-flex justify-content-center align-items-center">
+         <button class="rounded-3 sumbit-btn px-5 py-2 border-0 " onclick="addSite()"> Sumbit</button>
+
+       </div>
+       <p>......................................................................................................................................................................................................................................................................................................................................................................................</p>
+          <div class="table-responsive">
+             <table class="table my-3 text-center">
+         <thead>
+            <tr> 
+               <th>
+                  index
+               </th>
+               <th>
+                  Website Name
+               </th>
+               <th>Visit </th>
+               <th>Delete</th>
+            </tr>
+         </thead>
+         <tbody id="tableBody">
+           
+         </tbody>
+        </table>
+
+          </div>
+       
+      </div>
+ </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+</html>
